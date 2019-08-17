@@ -8,3 +8,34 @@ body{
     width: 1000px;
     margin: auto;
 }
+
+#topo{
+    text-align:center;
+}
+
+#logo{
+    margin: 35px 0;
+}
+
+#menu{
+    background-color: #222;
+    height: 40px;
+    
+}
+
+#menu a{
+    color: #fff;
+    text-decoration: none;
+    margin: 0 35px;
+    line-height: 40px;
+    
+}
+
+#menu a:hover{
+    text-decoration: underline;
+}
+
+#banner img{
+    width: 100%;
+    margin-top:  2px;
+}
