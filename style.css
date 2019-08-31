@@ -5,7 +5,8 @@ body{
 }
 
 #total{
-    width: 1000px;
+    width: 95%;
+    max-width: 1000px;
     margin: auto;
 }
 
@@ -42,6 +43,26 @@ body{
 #banner img{
     width: 100%;
     margin-top:  2px;
+}
+
+#anuncio{
+    width: 100%;
+    background-color: chocolate;
+    margin-bottom: 30px;
+    padding:  10px 0;
+    color: #fff;
+    text-align: center;
+    display: none;
+}
+
+#anuncio a{
+    text-decoration: none;
+    color: darkslateblue;
+}
+
+#anuncio a:hover{
+    color: #000;
+    text-decoration: none;
 }
 
 #rodape{
@@ -88,4 +109,40 @@ h2{
 
 .right{
     float: right;
+}
+
+@media screen and (max-width: 640px) {
+    .texto1, .texto2 {
+        width: 100%;
+    }
+    
+    #menu {
+        height: auto;
+    }
+    
+    #no {
+        border-color: #222 !important;
+    } /* !important = comando utilizado pra classificar como prioritario*/
+    
+    /*  #menu a:last-child {
+        border: none;
+    }  ( outra forma de tirar a borda)*/
+    
+    #menu a{
+        display: block;
+        border-bottom: 1px solid;
+    }
+    
+    
+}
+
+@media screen and (min-width: 641px) and (max-width: 800px) {
+    #anuncio {
+        display: block;
+    }
+    
+    #menu a {
+        font-size: 14px;
+        margin: 0 25px;
+    }
 }
